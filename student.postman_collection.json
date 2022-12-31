@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "38528e23-3e60-45ef-9766-1a7f43ef5099",
+		"name": "stud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24805913"
+	},
+	"item": [
+		{
+			"name": "view student",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n   { \"student_name\":\"trusha\",\r\n    \"student_email\":\"trusha@gmail.com\",\r\n    \"student_gender\":\"female\",\r\n    \"student_phone\":\"32465134615\",\r\n    \"student_dob\":\"12/12/2002\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5050/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5050/delete/eenLgVGM0GS2Y1n5riSN",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"delete",
+						"eenLgVGM0GS2Y1n5riSN"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:5050/update/eenLgVGM0GS2Y1n5riSN",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"update",
+						"eenLgVGM0GS2Y1n5riSN"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
